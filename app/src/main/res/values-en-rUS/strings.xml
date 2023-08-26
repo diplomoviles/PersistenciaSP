@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Persistencia SP</string>
+    <string name="action_azul">Blue</string>
+    <string name="action_rojo">Red</string>
+    <string name="action_verde">Green</string>
+</resources>
