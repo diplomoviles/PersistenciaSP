@@ -109,15 +109,15 @@ class MainActivity : AppCompatActivity() {
         // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
             R.id.action_rojo -> {
-                changeColor(R.color.mi_rojo)
+                changeColor(getColor(R.color.mi_rojo))
                 true
             }
             R.id.action_azul -> {
-                changeColor(R.color.mi_azul)
+                changeColor(getColor(R.color.mi_azul))
                 true
             }
             R.id.action_verde -> {
-                changeColor(R.color.mi_verde)
+                changeColor(getColor(R.color.mi_verde))
                 true
             }
             R.id.action_opcion1 -> {
@@ -137,9 +137,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun changeColor(color: Int){
-        val realColor = if (color < 0) color else getColor(color)
-        navHostFragment.view?.setBackgroundColor(realColor)
-        saveColor(realColor)
+        navHostFragment.view?.setBackgroundColor(color)
+        saveColor(color)
     }
 
     private fun saveColor(color: Int){
