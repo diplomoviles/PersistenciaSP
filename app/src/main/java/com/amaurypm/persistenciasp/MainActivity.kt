@@ -137,8 +137,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun changeColor(color: Int){
-        navHostFragment.view?.setBackgroundColor(getColor(color))
-        saveColor(color)
+        val realColor = if (color < 0) color else getColor(color)
+        navHostFragment.view?.setBackgroundColor(realColor)
+        saveColor(realColor)
     }
 
     private fun saveColor(color: Int){
