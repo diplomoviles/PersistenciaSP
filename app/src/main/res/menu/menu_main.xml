@@ -1,0 +1,47 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.amaurypm.persistenciasp.MainActivity">
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:title="@string/action_search"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_share"
+        android:orderInCategory="100"
+        android:title="@string/action_share"
+        android:icon="@drawable/ic_share"
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <item
+                android:id="@+id/action_opcion1"
+                android:title="@string/action_opcion1"
+                app:showAsAction="ifRoom"/>
+            <item
+                android:id="@+id/action_opcion2"
+                android:title="@string/action_opcion2"
+                app:showAsAction="ifRoom"/>
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/action_azul"
+        android:orderInCategory="100"
+        android:title="@string/action_azul"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_rojo"
+        android:orderInCategory="50"
+        android:title="@string/action_rojo"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_verde"
+        android:orderInCategory="100"
+        android:title="@string/action_verde"
+        app:showAsAction="never" />
+</menu>
